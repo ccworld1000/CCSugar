@@ -5,9 +5,10 @@ target 'CCSugariOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
+  # pod 'CCSugar', path: "."
   # Pods for CCSugariOS
   pod 'CCStat'
-  pod 'CCSugar', path: "."
+  pod 'CCSugar'
 
 end
 
@@ -15,7 +16,8 @@ target 'CCSugarOSX' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
+  # pod 'CCSugar', path: "."
   # Pods for CCSugarOSX
 
-    pod 'CCSugar', path: "."
+    pod 'CCSugar'
 end
