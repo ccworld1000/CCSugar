@@ -21,7 +21,7 @@ start from ObjectiveSugar 1.1.1
 ## Usage
 
 1. Install via [CocoaPods](http://cocoapods.org/)
-	
+
 	```
 	pod 'CCSugar'
 	```
@@ -47,15 +47,15 @@ __NSNumber__ additions
     // Hello!
     // Hello!
     // Hello!
-    
+
     [@3 timesWithIndex:^(NSUInteger index) {
         NSLog(@"Another version with number: %lu", (unsigned long)index);
     }];
     // Another version with number: 0
     // Another version with number: 1
     // Another version with number: 2
-    
-    
+
+
     [@1 upto:4 do:^(NSInteger numbah) {
         NSLog(@"Current number.. %ld", (long)numbah);
     }];
@@ -63,7 +63,7 @@ __NSNumber__ additions
     // Current number.. 2
     // Current number.. 3
     // Current number.. 4
-    
+
     [@7 downto:4 do:^(NSInteger numbah) {
         NSLog(@"Current number.. %ld", (long)numbah);
     }];
@@ -71,15 +71,15 @@ __NSNumber__ additions
     // Current number.. 6
     // Current number.. 5
     // Current number.. 4
-    
+
     NSDate *firstOfDecember = [NSDate date]; // let's pretend it's 1st of December
-    
+
     NSDate *firstOfNovember = [(@30).days since:firstOfDecember];
     NSLog(@"firstOfNovember : %@", firstOfNovember);
 
     NSDate *future = (@24).days.fromNow;
     NSLog(@"future : %@", future);
-    
+
     NSDate *past = @(1).month.ago;
     NSLog(@"past : %@", past);
 ```
@@ -349,12 +349,9 @@ do {
 # Other LICENSE
 ***
 
-[CCSugar LICENSE](LICENSE/LICENSE.CCSugar.txt) 
+[CCSugar LICENSE](LICENSE/LICENSE.CCSugar.txt)
 
-[ObjectiveSugar LICENSE](LICENSE/LICENSE.ObjectiveSugar.txt) 
+[ObjectiveSugar LICENSE](LICENSE/LICENSE.ObjectiveSugar.txt)
 ## Team
 
-- Marin Usalj [@supermarin](https://github.com/supermarin)
-- Neil Cowburn [@neilco](https://github.com/neilco)
 - CC [@ccworld1000](https://github.com/ccworld1000)
-
