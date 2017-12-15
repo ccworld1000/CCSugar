@@ -10,22 +10,22 @@
 
 @implementation NSMutableDictionary (CCSugar)
 
-- (void) push : (id)object forKey: (NSString *)key {
+- (void) push:(id)object forKey:(NSString *)key {
     if (!key) {
         NSLog(@"ill key");
         return;
     }
-    
+
     [self setObject:object forKey:key];
 }
 
-- (id) pop : (NSString *)key {
+- (id) pop:(NSString *)key {
     if (!key) {
         NSLog(@"ill key");
         return nil;
     }
-    
-    return [self objectForKey: key];
+
+    return [self objectForKey:key];
 }
 
 @end

@@ -10,108 +10,112 @@
 
 @implementation NSNumber (CCSugar)
 
-- (void)times:(void (^)(void))block {
-    for (int i = 0; i < self.integerValue; i++)
+- (void) times:(void (^)(void))block {
+    for (int i = 0; i < self.integerValue; i++) {
         block();
+    }
 }
 
-- (void)timesWithIndex:(void (^)(NSUInteger))block {
-    for (NSUInteger i = 0; i < self.unsignedIntegerValue; i++)
+- (void) timesWithIndex:(void (^)(NSUInteger))block {
+    for (NSUInteger i = 0; i < self.unsignedIntegerValue; i++) {
         block(i);
+    }
 }
 
-- (void)upto:(int)number do:(void (^)(NSInteger))block {
-    for (NSInteger i = self.integerValue; i <= number; i++)
-        block(i);
-}
+- (void) upto:(int)number do :(void (^)(NSInteger))block {
+            for (NSInteger i = self.integerValue; i <= number; i++) {
+                block(i);
+            }
+        }
 
-- (void)downto:(int)number do:(void (^)(NSInteger))block {
-    for (NSInteger i = self.integerValue; i >= number; i--)
-        block(i);
-}
+        - (void) downto:(int)number do :(void (^)(NSInteger))block {
+                    for (NSInteger i = self.integerValue; i >= number; i--) {
+                        block(i);
+                    }
+                }
 
-- (NSNumber *)second {
-    return self.seconds;
-}
+                - (NSNumber *) second {
+                    return self.seconds;
+                }
 
-- (NSNumber *)seconds {
-    return self;
-}
+                - (NSNumber *) seconds {
+                    return self;
+                }
 
-- (NSNumber *)minute {
-    return self.minutes;
-}
+                - (NSNumber *) minute {
+                    return self.minutes;
+                }
 
-- (NSNumber *)minutes {
-    return @(self.floatValue * 60);
-}
+                - (NSNumber *) minutes {
+                    return @(self.floatValue * 60);
+                }
 
-- (NSNumber *)hour {
-    return self.hours;
-}
+                - (NSNumber *) hour {
+                    return self.hours;
+                }
 
-- (NSNumber *)hours {
-    return @(self.floatValue * [@60 minutes].integerValue);
-}
+                - (NSNumber *) hours {
+                    return @(self.floatValue * [@60 minutes].integerValue);
+                }
 
-- (NSNumber *)day {
-    return self.days;
-}
+                - (NSNumber *) day {
+                    return self.days;
+                }
 
-- (NSNumber *)days {
-    return @(self.floatValue * [@24 hours].integerValue);
-}
+                - (NSNumber *) days {
+                    return @(self.floatValue * [@24 hours].integerValue);
+                }
 
-- (NSNumber *)week {
-    return self.weeks;
-}
+                - (NSNumber *) week {
+                    return self.weeks;
+                }
 
-- (NSNumber *)weeks {
-    return @(self.floatValue * [@7 days].integerValue);
-}
+                - (NSNumber *) weeks {
+                    return @(self.floatValue * [@7 days].integerValue);
+                }
 
-- (NSNumber *)fortnight {
-    return self.fortnights;
-}
+                - (NSNumber *) fortnight {
+                    return self.fortnights;
+                }
 
-- (NSNumber *)fortnights {
-    return @(self.floatValue * [@2 weeks].integerValue);
-}
+                - (NSNumber *) fortnights {
+                    return @(self.floatValue * [@2 weeks].integerValue);
+                }
 
-- (NSNumber *)month {
-    return self.months;
-}
+                - (NSNumber *) month {
+                    return self.months;
+                }
 
-- (NSNumber *)months {
-    return @(self.floatValue * [@30 days].integerValue);
-}
+                - (NSNumber *) months {
+                    return @(self.floatValue * [@30 days].integerValue);
+                }
 
-- (NSNumber *)year {
-    return self.years;
-}
+                - (NSNumber *) year {
+                    return self.years;
+                }
 
-- (NSNumber *)years {
-    return @(self.floatValue * [@(365.25) days].integerValue);
-}
+                - (NSNumber *) years {
+                    return @(self.floatValue * [@(365.25)days].integerValue);
+                }
 
-- (NSDate *)ago {
-    return [self ago:[NSDate date]];
-}
+                - (NSDate *) ago {
+                    return [self ago:[NSDate date]];
+                }
 
-- (NSDate *)ago:(NSDate *)time {
-    return [NSDate dateWithTimeIntervalSince1970:([time timeIntervalSince1970] - self.floatValue)];
-}
+                - (NSDate *) ago:(NSDate *)time {
+                    return [NSDate dateWithTimeIntervalSince1970:([time timeIntervalSince1970] - self.floatValue)];
+                }
 
-- (NSDate *)since:(NSDate *)time {
-    return [NSDate dateWithTimeIntervalSince1970:([time timeIntervalSince1970] + self.floatValue)];
-}
+                - (NSDate *) since:(NSDate *)time {
+                    return [NSDate dateWithTimeIntervalSince1970:([time timeIntervalSince1970] + self.floatValue)];
+                }
 
-- (NSDate *)until:(NSDate *)time {
-    return [self ago:time];
-}
+                - (NSDate *) until:(NSDate *)time {
+                    return [self ago:time];
+                }
 
-- (NSDate *)fromNow {
-    return [self since:[NSDate date]];
-}
+                - (NSDate *) fromNow {
+                    return [self since:[NSDate date]];
+                }
 
-@end
+                @end
