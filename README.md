@@ -1,14 +1,3 @@
-[![Apps Using](https://img.shields.io/cocoapods/at/CCSugar.svg?label=Apps%20Using%20CCSugar&colorB=28B9FE)](http://cocoapods.org/pods/CCSugar) [![Downloads](https://img.shields.io/cocoapods/dt/CCSugar.svg?label=Total%20Downloads&colorB=28B9FE)](http://cocoapods.org/pods/CCSugar)
-
-[![Platform](https://img.shields.io/badge/platforms-iOS%20%7C%20OSX-orange.svg)](https://github.com/ccworld1000/CCSugar.git)
-[![Languages](https://img.shields.io/badge/languages-ObjC-orange.svg)](https://github.com/ccworld1000/CCSugar)
-
-[![Version](https://img.shields.io/cocoapods/v/CCSugar.svg)](https://github.com/ccworld1000/CCSugar.git)
-[![License](https://img.shields.io/cocoapods/l/CCSugar.svg)](https://github.com/ccworld1000/CCSugar/blob/master/LICENSE/LICENSE.CCSugar.txt)
-
-
-[![Build Status](https://travis-ci.org/supermarin/ObjectiveSugar.svg?branch=master)](https://travis-ci.org/supermarin/ObjectiveSugar)
-
 
 > Write Objective C _like a boss_.<br/>
 
