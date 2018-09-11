@@ -2,9 +2,9 @@
 //  NSSet+CCSugar.m
 //  CCSugar
 //
-//  Created by dengyouhua on 17/4/1.
+//  Created by dengyouhua on 17/4/1 - now.
 //  Copyright © 2017年 cc | ccworld1000@gmail.com. All rights reserved.
-//
+//  https://github.com/ccworld1000/CCSugar
 
 #import "NSSet+CCSugar.h"
 #import "NSArray+CCSugar.h"
@@ -33,6 +33,8 @@
      }];
 }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmismatched-parameter-types"
 - (void) eachWithIndex:(void (^)(id, int))block {
     __block int counter = 0;
 
@@ -41,10 +43,10 @@
          counter++;
      }];
 }
+#pragma clang diagnostic pop
 
 - (NSArray *) map:(id (^)(id object))block {
     NSMutableArray * array = [NSMutableArray arrayWithCapacity:self.count];
-
 
     for (id object in self) {
         id mappedObject = block(object);

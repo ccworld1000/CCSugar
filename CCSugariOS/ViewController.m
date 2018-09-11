@@ -2,9 +2,9 @@
 //  ViewController.m
 //  CCSugariOS
 //
-//  Created by dengyouhua on 17/4/1.
+//  Created by dengyouhua on 17/4/1 - now.
 //  Copyright © 2017年 cc | ccworld1000@gmail.com. All rights reserved.
-//
+//  https://github.com/ccworld1000/CCSugar
 
 #import "ViewController.h"
 
@@ -18,12 +18,5 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

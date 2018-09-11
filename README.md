@@ -16,12 +16,12 @@ start from ObjectiveSugar 1.1.1
 	```
 2. Import the public header
 
-	```
+	```objc
 	#import <CCSugar.h>
 	```
 or
 
-	```
+	```objc
 	#import "CCSugar.h"
 
 	```

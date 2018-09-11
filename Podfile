@@ -7,7 +7,7 @@ target 'CCSugariOS' do
 
   # pod 'CCSugar', path: "."
   # Pods for CCSugariOS
-  pod 'CCStat'
+  
   pod 'CCSugar'
 
 end

@@ -2,9 +2,9 @@
 //  CCSugarTest.m
 //  CCSugariOS
 //
-//  Created by dengyouhua on 17/4/1.
+//  Created by dengyouhua on 17/4/1 - now.
 //  Copyright © 2017年 cc | ccworld1000@gmail.com. All rights reserved.
-//
+//  https://github.com/ccworld1000/CCSugar
 
 #import "CCSugarTest.h"
 #import <CCSugar.h>

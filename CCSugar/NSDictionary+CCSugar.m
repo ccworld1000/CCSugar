@@ -2,9 +2,9 @@
 //  NSDictionary+CCSugar.m
 //  CCSugar
 //
-//  Created by dengyouhua on 17/4/1.
+//  Created by dengyouhua on 17/4/1 - now.
 //  Copyright © 2017年 cc | ccworld1000@gmail.com. All rights reserved.
-//
+//  https://github.com/ccworld1000/CCSugar
 
 #import "NSDictionary+CCSugar.h"
 #import "NSArray+CCSugar.h"
