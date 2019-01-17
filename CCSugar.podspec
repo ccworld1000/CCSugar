@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CCSugar"
-  s.version      = "1.2.1"
+  s.version      = "1.2.2"
   s.summary      = "A set of functional additions for Foundation you wish you'd had in the first place. Objective C additions for humans. Write ObjC _like a boss_."
 
   # This description is used to generate tags and improve search results.
