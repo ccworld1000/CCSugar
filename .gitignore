@@ -33,4 +33,5 @@ xcuserdata/
 Pods/
 Podfile.lock
 
-CCSugar.podspec
+*.podspec
+Podfile
