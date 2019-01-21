@@ -60,4 +60,31 @@
     return self;
 }
 
+- (NSArray *) getOneGroup : (NSUInteger) count position : (NSUInteger) from {
+    NSMutableArray *group = nil;
+    
+    NSMutableArray *originList = self;
+    NSInteger originListCount = originList.count;
+    
+    if (!originList || !originListCount || !count) {
+        return group;
+    }
+    
+    group = [NSMutableArray arrayWithCapacity:count];
+    
+    for (int i = 0; i < count; i++) {
+        NSInteger index = from + i;
+        
+        if (index < originListCount) {
+            [group addObject:originList[index]];
+        } else {
+            index = (index) % originListCount;
+            [group addObject:originList[index]];
+        }
+    }
+    
+    return [group copy];
+}
+
+
 @end

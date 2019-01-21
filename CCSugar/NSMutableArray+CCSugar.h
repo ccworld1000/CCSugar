@@ -58,4 +58,13 @@
  */
 - (NSArray *)keepIf:(BOOL (^)(id object))block;
 
+/**
+ Get a set of elements from an array
+ 
+ @param count count
+ @param from position from
+ @return return value description
+ */
+- (NSArray *) getOneGroup : (NSUInteger) count position : (NSUInteger) from;
+
 @end
