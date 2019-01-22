@@ -32,6 +32,6 @@ xcuserdata/
 #
 Pods/
 Podfile.lock
+Podfile
 
 *.podspec
-Podfile

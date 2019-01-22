@@ -7,17 +7,23 @@
 //  https://github.com/ccworld1000/CCSugar
 
 #import "ViewController.h"
+#import <CCSugar.h>
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *list;
 @property (weak, nonatomic) IBOutlet UILabel *indexLabel;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UILabel *resultList;
+
 
 @property (nonatomic) NSInteger index;
 @property (nonatomic) NSInteger elementCount;
-@property (weak, nonatomic) IBOutlet UIButton *button;
+
 
 @property (nonatomic, strong) NSMutableArray *elementList;
+@property (nonatomic, strong) NSMutableArray *array;
+
 
 @end
 
@@ -37,20 +43,18 @@
     
     self.elementCount = 5;
     
-//    if (<#condition#>) {
-//        <#statements#>
-//    }
-    
     NSInteger count = 18;
     
-    NSMutableArray *array = [NSMutableArray arrayWithCapacity:count];
+    _array = [NSMutableArray arrayWithCapacity:count];
     
     for (int i = 0; i < count; i++) {
-        [array addObject: [NSString stringWithFormat:@"%i", i]];
+        [_array addObject: [NSString stringWithFormat:@"%i", i]];
         
     }
     
-    _list.text =  [array componentsJoinedByString:@" | "];
+    _list.text =  [_array componentsJoinedByString:@" | "];
+    _list.adjustsFontSizeToFitWidth = YES;
+    _resultList.adjustsFontSizeToFitWidth = YES;
     
     [self elemHandle:nil];
     
@@ -58,9 +62,20 @@
     
 }
 
-
 - (IBAction) elemHandle :(id)sender {
     _indexLabel.text = [NSString stringWithFormat:@"    %ld", self.index];
+    
+    if (self.elementList.count) {
+        [self.elementList removeAllObjects];
+    }
+
+    NSArray *list = [self.array getOneGroup:self.elementCount position:self.index];
+    
+    [self.elementList concat:list];
+    
+    if (self.elementList.count) {
+         _resultList.text =  [_elementList componentsJoinedByString:@" | "];
+    }
     
     self.index++;
     
