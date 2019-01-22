@@ -3,6 +3,18 @@
 
 A set of functional additions for Foundation you wish you'd had in the first place.
 
+## Screenshots
+
+iPhone
+
+![CCSugar iPhone Screenshot](https://github.com/ccworld1000/CCSugar/blob/master/Screenshots/iPhoneDemo.gif?raw=true)
+
+
+
+osx
+
+![CCSugar osx Screenshot](https://github.com/ccworld1000/CCSugar/blob/master/Screenshots/osxDemo.gif?raw=true)
+
 ## Support MAC OSX and iOS
 
 start from ObjectiveSugar 1.1.1
