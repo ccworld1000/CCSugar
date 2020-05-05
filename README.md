@@ -7,13 +7,13 @@ A set of functional additions for Foundation you wish you'd had in the first pla
 
 iPhone
 
-![CCSugar iPhone Screenshot](https://github.com/ccworld1000/CCSugar/blob/master/Screenshots/iPhoneDemo.gif?raw=true)
+![CCSugar iPhone Screenshot](https://raw.github.com/ccworld1000/CCSugar/master/Screenshots/iPhoneDemo.gif?raw=true)
 
 
 
 osx
 
-![CCSugar osx Screenshot](https://github.com/ccworld1000/CCSugar/blob/master/Screenshots/osxDemo.gif?raw=true)
+![CCSugar osx Screenshot](https://raw.github.com/ccworld1000/CCSugar/master/Screenshots/osxDemo.gif?raw=true)
 
 ## Support MAC OSX and iOS
 
